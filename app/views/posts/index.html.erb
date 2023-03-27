@@ -2,7 +2,14 @@
 
 <h1>Posts</h1>
 
-<table>
+<div class="container">
+  <div class="row">
+ <div class="col-lg-4" style="background-color: orange;">
+      <h2>サイドバー</h2>
+    </div>
+<div class="col-lg-8">
+  <!--"col-lg-4に+8のように両者合計が12になるように記述-->
+<table class="table table-striped">
   <thead>
     <tr>
       <th>Title</th>
@@ -26,6 +33,13 @@
   </tbody>
 </table>
 
+</div>
+</div>
+
 <br>
 
-<%= link_to 'New Post', new_post_path %>
+<%= link_to 'New Post', new_post_path, class: "btn btn-secondary" %>
+<!--a要素やbutton要素などのclass名に、btn btn_○○(色やサイズなど)を指定で設定できる-->
+
+<!--他にもいろいろ-->
+<!--公式参考サイト https://getbootstrap.jp/docs/4.5/getting-started/introduction/ -->
